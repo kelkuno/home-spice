@@ -7,10 +7,12 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: white;
-    background: #ffcc00;
-    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1em;
+    margin: 0;
 }
 img {
     max-width: 100%;
@@ -22,10 +24,18 @@ ul {
 li {
     list-style-type: none;
 }
-h1 , h3 {
+h1 {
     font-size: 3vw;
     padding: 0;
     margin: 0;
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+    font-size: 4vw; 
+    line-height: 1;
+    letter-spacing: .04em;
+}
 }
 a {
     color: black;
@@ -44,16 +54,19 @@ h2 {
     margin: 0;
     line-height: 1;
     letter-spacing: .1em;
-    font-family: 'Bowlby One SC', cursive;
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 /****Nav styling****/
 .nav {
-    display: none;
+    display:block;
     position: fixed;
     width: 100vw;
     grid-column:1/4;
     grid-row:1/2;
-    background-color: black;
+    background-color: white;
+    margin: 0;
 }
 .nav ul {
     display: flex;
@@ -62,7 +75,10 @@ h2 {
     flex: 1;
 }
 .nav ul li a {
-    color: #ffff4d;
+    color: black;
+    font-family: acumin-pro, sans-serif;
+    text-decoration: none;
+
 }
 /*************************Main Grid***************************/
 .wrapper {
@@ -73,47 +89,38 @@ h2 {
     align-items: start;
     justify-items: stretch;
 }
-.organization {
+.opening {
+    width: 100vw;
     grid-column:1/4;
-    grid-row:1/2;
-    justify-self: start;
-    align-self: end;
+    grid-row:2/3;  
 }
-.title-cuban {
-    grid-column:1/4;
-    grid-row:2/3;
-    align-self:start;
-}
-.title-film {
-    grid-column:1/3;
-    grid-row:3/4;
-}
-.title-festival {
-    grid-column:1/4;
-    grid-row:4/5;
-}
-.title-year {
-    grid-column:1/4;
-    grid-row:5/6;
-}
-.screening {
-    grid-column: 3/4;
-    grid-row: 3/4;
-    align-self: end;
-    justify-self: stetch;
-}
-.image {
-        grid-column: 1/2;
-        grid-row: 8/9;
-        align-self: stretch;
-}
-.address {
-    grid-column: 2/4;
-    grid-row: 8/9;
-    align-self: end;
-    justify-self: stretch;
+/****Nested sections****/
+.about {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: .5em;
+    align-items: stretch;
+    justify-items: stretch;
 }
 
+.recipe-photo{
+    grid-column: 2/6;
+    grid-row: 1/2;
+}
+.hook {
+    grid-column: 2/6;
+    grid-row: 2/3;
+}
+.logo-photo{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self:start;
+}
+.description {
+    grid-column: 3/6;
+    grid-row: 3/4;
+}
 /****Nested Grid -- Film Schedule****/
 .nested {
     display: grid;
@@ -135,12 +142,12 @@ h2 {
     grid-row: 6/7; 
 }
 .nested .title{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Kalam', cursive;
     text-align: center;
 }
 .nested .film-dates {
     align-items: end;
-    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Kalam', cursive;
     text-align: center;
     font-size: 4vw;
 }
