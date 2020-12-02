@@ -99,7 +99,6 @@ h2 {
     align-items: stretch;
     justify-items: stretch; 
     background: white; 
-    border: solid blue 2px;
     position: fixed;
 }
 #episodes {
@@ -111,7 +110,6 @@ h2 {
     grid-gap: .5em;
     align-items: stretch;
     justify-items: stretch;  
-    border: solid green 2px; 
     margin: 60px 0 0 0;
 }
 #about {
@@ -133,6 +131,7 @@ h2 {
     grid-gap: .5em;
     align-items: stretch;
     justify-items: stretch; 
+    margin: 60px 0 0 0;
 }
 /****main-nav****/
 .logo-nav{
@@ -147,12 +146,10 @@ h2 {
 .nav{
     grid-column:4/7;
     grid-row:1/2; 
-    border: solid 2px green;
     align-self: center;
 }
 .nav ul {
     display:flex;
-    border: solid 2px yellow;
     font-size: .8em;
     
 }
@@ -175,23 +172,19 @@ h2 {
     grid-gap: .5em;
     align-items: stretch;
     justify-items: stretch;  
-    background: solid 3px red;
 }
 .episode-title {
     grid-column:1/7;
     grid-row:1/2;
-    border: solid 2px coral; 
 }
 
 .episode-background{
     grid-column:1/7;
     grid-row:1/2; 
-    border: solid 3px yellow;
 }
 .episode-video {
     grid-column:2/6;
     grid-row:1/2;
-    border: solid 2px pink;
     align-self: center;
     justify-self: center;
 }
@@ -213,7 +206,7 @@ h2 {
     grid-gap: .5em;
     align-items: stretch;
     justify-items: stretch;  
-    background: solid 3px red;
+
 }
 .recipe-instruction{
     grid-column:2/6;
@@ -222,4 +215,6 @@ h2 {
 .recipe-video{
     grid-column:2/6;
     grid-row:1/2; 
+    align-self: center;
+    justify-self: center;
 }
